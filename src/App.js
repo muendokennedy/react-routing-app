@@ -6,57 +6,28 @@ import Missing from './Missing';
 import NewPost from './NewPost';
 import Footer from './Footer';
 import About from './About';
-import { BrowserRouter as Router, Routes, Route,useHistory} from 'react-router-dom';
-
+import { Route, useHistory, Switch} from 'react-router-dom';
 
 
 function App() {
   return (
     <div className="App">
-        <Router>
-          <Routes>
-            <Route exact path='/' element={
-            <>
-            <Header/>
-            <Nav/>
-            <Home/>
-            <Footer/>
-            </>
-            }/>
-            <Route exact path='/post' element={
-              <>
-              <Header/>
-              <Nav/>
-              <NewPost/>
-              <Footer/>
-              </>
-            }/>
-            <Route exact path='/post/:id' element={
-              <>
-              <Header/>
-              <Nav/>
-              <PostPage/>
-              <Footer/>
-              </>
-            }/>
-            <Route exact path='/about' element={
-              <>
-              <Header/>
-              <Nav/>
-              <About/>
-              <Footer/>
-              </>
-            }/>
-            <Route exact path='*' element={
-              <>
-              <Header/>
-              <Nav/>
-              <Missing/>
-              <Footer/>
-              </>
-            }/>
-          </Routes>
-        </Router>
+       <Header/>
+       <Nav/>
+       <Switch>
+            <Route exact path='/'>
+                <Home/>
+            </Route>
+            <Route exact path='/post'>
+                <NewPost/>
+            </Route>
+            <Route exact path='/post/:id'>
+                <PostPage/>
+            </Route>
+            <Route exact path='/about' component={About}/>
+            <Route exact path='*' component={Missing}/>
+       </Switch>
+       <Footer/>
     </div>
   );
 }
