@@ -7,6 +7,7 @@ import NewPost from './NewPost';
 import Footer from './Footer';
 import About from './About';
 import { Route, useHistory, Switch} from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 
 function App() {
