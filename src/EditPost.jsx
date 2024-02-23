@@ -26,6 +26,15 @@ const EditPost = ({ posts, handleEdit, editTitle, setEditTitle, editBody, setEdi
         </form>
       </>
       }
+      {!editTitle && 
+        <>
+          <h2>Post Not Found!</h2>
+          <p>Well, that's is disappointing</p>
+          <p>
+            <Link to='/'>Visit Our Homepage</Link>
+          </p>
+        </>
+        }
   </main>
   )
 }

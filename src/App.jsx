@@ -11,6 +11,7 @@ import { useState, useEffect } from 'react';
 import { format } from 'date-fns';
 import api from './api/Post';
 import EditPost from './EditPost';
+import useWindowSize from './hooks/useWindowSize';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
   const [editTitle, setEditTitle] = useState('');
   const [editBody, setEditBody] = useState('');
   const history = useHistory();
+  const { width } = useWindowSize();
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -109,7 +111,7 @@ function App() {
 
   return (
     <div className="App">
-       <Header title='React JS Blog'/>
+       <Header title='React JS Blog' width={width}/>
        <Nav search={search} setSearch={setSearch}/>
        <Switch>
             <Route exact path='/'>
@@ -124,7 +126,7 @@ function App() {
                   setPostBody={setPostBody}
                 />
             </Route>
-            <Route path='/edit/:id'>
+            <Route exact path='/edit/:id'>
                 <EditPost
                 posts={posts}
                   handleEdit={handleEdit}

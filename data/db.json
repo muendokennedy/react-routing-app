@@ -1,33 +1,9 @@
 {
   "posts": [
     {
-      "id": "2",
-      "title": "My Second Post",
-      "datetime": "July 01 2021 11:17:36 AM",
-      "body": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, repellendus. Atque neque iste laudantium tenetur!"
-    },
-    {
-      "id": "3",
-      "title": "My Third Post",
-      "datetime": "July 01 2021 11:17:36 AM",
-      "body": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, repellendus. Atque neque iste laudantium tenetur!"
-    },
-    {
-      "id": "4",
-      "title": "My Fourth Post",
-      "datetime": "July 01 2021 11:17:36 AM",
-      "body": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, repellendus. Atque neque iste laudantium tenetur!"
-    },
-    {
-      "id": "5",
-      "title": "new edit fifth",
-      "datetime": "February 23, 2024 1:59:32 PM",
-      "body": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, repellendus. Atque neque iste laudantium tenetur!"
-    },
-    {
       "id": "51",
-      "title": "Vue.js",
-      "datetime": "February 23, 2024 2:04:10 PM",
+      "title": "Vue and inertia framework",
+      "datetime": "February 23, 2024 3:32:25 PM",
       "body": "This is one of my favorite javascript frameworks and I'm currently learning it now."
     },
     {
