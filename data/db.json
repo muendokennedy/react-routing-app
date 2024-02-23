@@ -17,6 +17,12 @@
       "title": "React.js",
       "datetime": "February 23, 2024 5:21:14 PM",
       "body": "This is one the most common and famous javascript frameworks I am working on right now."
+    },
+    {
+      "id": "51111",
+      "title": "New post",
+      "datetime": "February 23, 2024 6:38:07 PM",
+      "body": "This is a new post that can be updated successufully now"
     }
   ]
 }
