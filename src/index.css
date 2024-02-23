@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -175,10 +176,9 @@ body{
   font-size: 1rem;
   cursor: pointer;
 }
-
-.Missing h2, .PostPage h2, 
-.Missing p, .PostPage p {
-  margin-bottom: 1rem;
+ 
+.Missing p, .PostPage p, .NewPost p {
+  margin-top: 1rem;
 }
 
 .PostPage button {
